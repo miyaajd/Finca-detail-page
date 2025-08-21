@@ -37,7 +37,7 @@ button{
 .header {
   width: 100vw;
   height: 60px;
-  background-color: #efefef;
+  background-color: #fff;
 }
 /* product- main */
 .product-main {
@@ -120,7 +120,7 @@ button{
 .main-line {
   width: 100%;
   height: 1px;
-  background-color: #bbb;
+  background-color: #ddd;
 }
 /* 금액 */
 .account {
@@ -151,7 +151,7 @@ button{
   align-items: center;
   justify-content: center;
   gap: 5px;
-  padding: 15px;
+  padding: 15px 0;
   cursor: pointer;
 }
 #kakao{

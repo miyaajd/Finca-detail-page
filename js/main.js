@@ -10,6 +10,8 @@ window.addEventListener("load", function () {
   const s = 104000;
   const q = 154000;
   //
+  won.innerText = `0 원`;
+  // 
   sizes.addEventListener("change", () => {
     if (sizes.value === "ss") {
       won.innerText =`${s.toLocaleString()} 원`;
