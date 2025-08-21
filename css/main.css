@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: "Nanum Gothic", sans-serif;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+span {
+  display: block;
+}
+.nanum-gothic-regular {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 전체영역 */
+.finca-detail-wrap {
+  width: 100vw;
+}
+/* header */
+.header {
+  width: 100vw;
+  height: 60px;
+  background-color: #efefef;
+}
+/* product- main */
+.product-main {
+  width: 100vw;
+  display: flex;
+}
+/* main-left */
+.main-l {
+  width: 45%;
+}
+.mainLeft {
+  width: 100%;
+}
+.mainLeft img {
+  width: 100%;
+  object-fit: contain;
+}
+/* main-right */
+.main-r {
+  width: 55%;
+}
+.main-r-inner {
+  width: 70%;
+  margin: 0 auto;
+  /* background-color: #efefef; */
+}
+.title-txt {
+  width: 100%;
+  padding: 30px 0;
+}
+.title-txt h1 {
+  font-size: 23px;
+}
+.title-txt a {
+  text-decoration: underline;
+  padding: 18px 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #999;
+}
+.title-txt span {
+  font-size: 14px;
+  color: #bbb;
+  text-decoration: line-through;
+}
