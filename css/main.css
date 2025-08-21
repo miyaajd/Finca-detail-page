@@ -20,7 +20,7 @@ a {
 span {
   display: block;
 }
-button{
+button {
   all: unset;
 }
 .nanum-gothic-regular {
@@ -127,7 +127,7 @@ button{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0 ;
+  padding: 40px 0;
   font-size: 20px;
   font-weight: bold;
 }
@@ -135,13 +135,13 @@ button{
   color: #888;
 }
 /* 구매옵션 */
-.buy{
+.buy {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.buy button{
+.buy button {
   width: 100%;
   text-align: center;
   font-size: 18px;
@@ -154,36 +154,70 @@ button{
   padding: 15px 0;
   cursor: pointer;
 }
-#kakao{
-  background-color: #E2DC39F1;
+#kakao {
+  background-color: #e2dc39f1;
 }
-#kakao img{
+#kakao img {
   height: 20px;
 }
-#n-pay{
+#n-pay {
   background-color: #000;
 }
-#n-pay span{
+#n-pay span {
   color: #fff;
 }
-#n-pay img{
+#n-pay img {
   height: 25px;
 }
-.buy-cart{
+.buy-cart {
   width: 100%;
   display: flex;
 }
-.buy-cart li{
+.buy-cart li {
   width: calc(100% / 2);
 }
-#cart{
+#cart {
   width: 100%;
-  border: 1px solid #15327d ;
+  border: 1px solid #15327d;
   padding: 14px;
   color: #15327d;
 }
-#buy{
+#buy {
   width: 100%;
   color: #fff;
   background-color: #15327d;
+}
+/*  */
+/* more */
+.more {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 0;
+  gap: 36px;
+}
+.more li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.more span{
+  font-size: 20px;
+}
+.more i{
+  font-size: 18px;
+}
+.more-dscr li{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 30px 0 40px;
+  display: none;
+}
+.more-dscr li.active{
+  display: block;
+}
+.more-dscr p{
+  line-height: 1.7;
 }
