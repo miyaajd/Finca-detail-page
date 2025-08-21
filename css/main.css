@@ -80,3 +80,8 @@ span {
   color: #bbb;
   text-decoration: line-through;
 }
+.title-txt p{
+    padding: 18px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
