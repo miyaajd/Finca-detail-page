@@ -20,6 +20,9 @@ a {
 span {
   display: block;
 }
+button{
+  all: unset;
+}
 .nanum-gothic-regular {
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
@@ -43,7 +46,7 @@ span {
 }
 /* main-left */
 .main-l {
-  width: 45%;
+  width: 50%;
 }
 .mainLeft {
   width: 100%;
@@ -55,7 +58,7 @@ span {
 }
 /* main-right */
 .main-r {
-  width: 55%;
+  width: 50%;
 }
 .main-r-inner {
   width: 70%;
@@ -64,25 +67,123 @@ span {
 }
 .title-txt {
   width: 100%;
-  padding: 30px 0;
+  padding: 60px 0 40px;
 }
 .title-txt h1 {
   font-size: 23px;
+  line-height: 1.3;
 }
 .title-txt a {
   text-decoration: underline;
-  padding: 18px 0;
+  padding: 18px 0 40px;
   font-weight: 600;
-  font-size: 14px;
-  color: #999;
+  font-size: 15px;
+  color: #777;
 }
 .title-txt span {
-  font-size: 14px;
+  font-size: 18px;
   color: #bbb;
   text-decoration: line-through;
 }
-.title-txt p{
-    padding: 18px 0;
-    font-size: 18px;
-    font-weight: bold;
+.title-txt p {
+  padding: 12px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* option */
+.option {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 50px;
+}
+
+.option form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.option label {
+  font-size: 18px;
+  width: 30%;
+}
+#sizes,
+#with {
+  padding: 14px;
+  width: 70%;
+  border-color: #bbb;
+  font-size: 14px;
+  color: #777;
+  cursor: pointer;
+}
+.main-line {
+  width: 100%;
+  height: 1px;
+  background-color: #bbb;
+}
+/* 금액 */
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 ;
+  font-size: 20px;
+  font-weight: bold;
+}
+.account p {
+  color: #888;
+}
+/* 구매옵션 */
+.buy{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.buy button{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px;
+  cursor: pointer;
+}
+#kakao{
+  background-color: #E2DC39F1;
+}
+#kakao img{
+  height: 20px;
+}
+#n-pay{
+  background-color: #000;
+}
+#n-pay span{
+  color: #fff;
+}
+#n-pay img{
+  height: 25px;
+}
+.buy-cart{
+  width: 100%;
+  display: flex;
+}
+.buy-cart li{
+  width: calc(100% / 2);
+}
+#cart{
+  width: 100%;
+  border: 1px solid #15327d ;
+  padding: 14px;
+  color: #15327d;
+}
+#buy{
+  width: 100%;
+  color: #fff;
+  background-color: #15327d;
 }

@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FINCA | Detail-Page</title>
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- favicon -->
     <link
       rel="icon"
@@ -78,6 +86,57 @@
               <span>130,000원</span>
               <p>20% 104,000원</p>
             </div>
+            <!-- option -->
+            <div class="option">
+              <form action="#" class="option-size">
+                <label for="sizes">사이즈</label>
+                <select name="sizes" id="sizes">
+                  <option value="default">필수 | 옵션을 선택하여 주세요</option>
+                  <option value="ss" id="ss">SS</option>
+                  <option value="qk" id="qk">Q/K</option>
+                </select>
+              </form>
+              <form action="#" class="option-with">
+                <label for="with">구성</label>
+                <select name="with" id="with">
+                  <option value="default">필수 | 옵션을 선택하여 주세요</option>
+                </select>
+              </form>
+            </div>
+            <!--  -->
+            <div class="main-line"></div>
+            <!--  -->
+            <div class="account">
+              <p>전체금액</p>
+              <span id="won"></span>
+            </div>
+            <!-- 구매옵션 -->
+            <ul class="buy">
+              <li>
+                <button id="kakao">
+                  <img
+                    src="images/kakao-npay/imgi_45_ico_kakao.svg"
+                    alt="kakao"
+                  />
+                  <span>카카오톡 친구 추가 +3000원</span>
+                </button>
+              </li>
+              <li>
+                <button id="n-pay">
+                  <img
+                    src="images/kakao-npay/imgi_49_badge_npay.svg"
+                    alt="npay"
+                  />
+                  <span>구매하기</span>
+                </button>
+              </li>
+              <li>
+                <ul class="buy-cart">
+                  <li><button id="cart">장바구니</button></li>
+                  <li><button id="buy">구매하기</button></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
