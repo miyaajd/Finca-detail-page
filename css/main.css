@@ -51,6 +51,7 @@ span {
 .mainLeft img {
   width: 100%;
   object-fit: contain;
+  cursor: pointer;
 }
 /* main-right */
 .main-r {
