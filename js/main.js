@@ -22,14 +22,12 @@ window.addEventListener("load", function () {
     }
   });
   //
-  //
-  const moreBtn = this.document.querySelectorAll(".more li");
-  const moreDscr = this.document.querySelectorAll(".more-dscr li");
-  moreBtn.forEach((btn, index) => {
-    btn.addEventListener("click", () => {
-      moreDscr.forEach((dscr, index) => {
-        dscr.classList.remove("active");
-      });
+  //active
+  const moreTitle = this.document.querySelectorAll(".more-title");
+  const moreDscr = this.document.querySelectorAll(".more-dscr");
+  moreTitle.forEach((more, index) => {
+    more.addEventListener("click", () => {
+      more.classList.toggle("active");
       moreDscr[index].classList.toggle("active");
     });
   });
