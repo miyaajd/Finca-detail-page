@@ -31,4 +31,15 @@ window.addEventListener("load", function () {
       moreDscr[index].classList.toggle("active");
     });
   });
+  //
+  // swiper
+  const productSwiper = new Swiper(".product-swiper", {
+    loop: true,
+    breakpoints: {
+      1000: {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+      },
+    },
+  });
 });
