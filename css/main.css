@@ -22,6 +22,7 @@ span {
 }
 button {
   all: unset;
+  cursor: pointer;
 }
 img {
   display: block;
@@ -29,7 +30,16 @@ img {
 body {
   background-color: #f6f5f1;
 }
-
+/* goBtn */
+#goTop{
+  position: fixed;
+  top: 95%;
+  left: 96%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #15327d;
+  z-index: 99;
+}
 /* 전체영역 */
 .finca-detail-wrap {
   width: 100vw;
@@ -57,7 +67,7 @@ nav {
   /* background-color: #fff; */
 }
 .nav {
-  padding-left: 16px;
+  padding-left: 24px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -322,24 +332,105 @@ nav {
 /* detail */
 .detail-wrap {
   width: 100vw;
-  padding: 50px 0;
+  line-height: 1.7;
+  max-height: 150vh;
+  overflow: hidden;
+  /* transition: all 0.5s ease; */
+}
+.detail-wrap.open{
+  max-height: 20000000vh;
+}
+.detail-wrap p,
+.detail-wrap span {
+  font-size: 15px;
+}
+.detail-wrap h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #15327d;
+}
+.txt-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 .detail-inner {
   width: 70%;
   margin: auto;
 }
-/*  */
-.detail-top{
+
+/* d-top */
+.detail-top {
   width: 100%;
 }
-.detail-top img{
+/*  */
+.detailTxtWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 80px;
+}
+.detail-top img {
   width: 50vw;
   margin: auto;
 }
-.line{
+.line {
   width: 100%;
   height: 0.6px;
-  background-color: #ddd;
+  background-color: #ccc;
+  margin: 80px 0;
+}
+
+/* d-middle */
+
+.detail-middle {
+  width: 100%;
+}
+.detail-middle img {
+  width: 100%;
+}
+.d-img-list {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* detail-bottom */
+
+.detail-bottom {
+  width: 100%;
+}
+.detail-bottom h2 {
+  color: #15327d;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.detail-bottom img {
+  width: 80%;
+  margin: auto;
+}
+
+/* moreBtn */
+.moreBtn{
+  margin: auto;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  
+}
+.moreBtn p{
+  color: #15327d;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.moreBtn strong{
+  font-size: 2rem;
+  color: #15327d;
+  font-weight: 700;
 }
 
 /* 슬라이더 */
@@ -363,9 +454,159 @@ nav {
   flex-direction: column;
   gap: 5px;
 }
+/* 공통클래스 */
+.notPaddingTop {
+  padding-top: 0px;
+}
+.paddingBottom {
+  padding-bottom: 80px;
+}
+
+/* review */
+
+.review-wrap {
+  width: 100%;
+  padding: 50px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.review-wrap h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.review-wrap span {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #15327d;
+}
+.review-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviewBox {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  border: 0.6px solid #777;
+  border-top: 3px solid #333;
+}
+.reviewBox-l {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+  position: relative;
+}
+.reviewBox-l h1 {
+  font-size: 36px;
+}
+.reviewBox-l span {
+  margin: auto;
+  width: 70%;
+  font-size: 18px;
+  padding: 10px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.reviewBox-l::after {
+  content: "";
+  width: 0.6px;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  right: 0;
+}
+/*  */
+
+.reviewBox-r {
+  width: 60%;
+}
+.reviewBox-r ul {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.reviewBox-r li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviewBox-r > ul > li > p {
+  width: 20%;
+  font-size: 15px;
+  color: #777;
+}
+.reviewBox-r > ul > li > span {
+  width: 10%;
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777;
+}
+.stick {
+  width: 70%;
+  height: 0.6rem;
+  background-color: #ddd;
+  border-radius: 0.3rem;
+}
+.reviewBox-r li:first-child p,
+.reviewBox-r li:first-child span {
+  color: #333;
+  font-weight: 600;
+}
+.reviewBox-r li:first-child .stick {
+  background-color: #333;
+}
+.review-txt {
+  display: flex;
+  flex-direction: column;
+}
+.review-txt span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777;
+}
+.review-txt strong {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+#moreTxt {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#readMore {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#moreTxt.open {
+  -webkit-line-clamp: unset;
+}
+.review-line {
+  margin: 40px 0;
+}
+#ask {
+  margin: auto;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #15327d;
+  border-radius: 5px;
+  padding: 10px 100px;
+}
+
 /* footer */
 .footer {
-  padding: 80px 0 32px;
+  padding: 130px 0 32px;
   width: 96%;
   margin: auto;
   display: flex;
