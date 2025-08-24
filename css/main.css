@@ -454,6 +454,12 @@ nav {
   flex-direction: column;
   gap: 5px;
 }
+.slider-txt p{
+  font-size: 0.9rem;
+}
+.slider-txt span{
+  font-weight: 500;
+}
 /* 공통클래스 */
 .notPaddingTop {
   padding-top: 0px;
