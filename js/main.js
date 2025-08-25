@@ -94,4 +94,10 @@ window.addEventListener("load", function () {
       moreBtn.style.display = "flex";
     });
   });
+  // modal
+  const modalClose = this.document.querySelector("#modalClose");
+  const modal = this.document.querySelector(".modalWrap");
+  modalClose.addEventListener("click", () => {
+    modal.classList.add("none");
+  });
 });

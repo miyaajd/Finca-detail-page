@@ -30,6 +30,66 @@ img {
 body {
   background-color: #f6f5f1;
 }
+/* modal */
+/* modal */
+.modalWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.modalWrap.none {
+  opacity: 0;
+  visibility: hidden;
+}
+.modalBox {
+  width: 40%;
+  margin: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 2%;
+}
+.modalLogo {
+  width: 20%;
+  margin: 8% auto;
+}
+.modalLogo img {
+  width: 100%;
+}
+.modalDscr {
+  padding: 0 8%;
+  font-weight: 500;
+}
+.modalDscr strong {
+  font-weight: 800;
+}
+.points {
+  padding: 8% 0;
+  line-height: 2.3;
+}
+.points li {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #7b7b7b;
+}
+#modalClose {
+  margin-bottom: 3%;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
 /* goBtn */
 #goTop{
   position: fixed;
