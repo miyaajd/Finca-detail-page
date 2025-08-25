@@ -1,4 +1,12 @@
 window.addEventListener("load", function () {
+  const aTag = this.document.querySelectorAll("a");
+  aTag.forEach((a) => {
+    a.addEventListener("click", (e) => {
+      if (a.getAttribute("href") === "#") {
+        e.preventDefault();
+      }
+    });
+  });
   const swiper = new Swiper(".mainLeft", {
     scrollbar: {
       el: ".swiper-scrollbar",
@@ -58,18 +66,32 @@ window.addEventListener("load", function () {
       behavior: "smooth",
     });
   });
+  // 고바텀 버튼
+  const goBottom = this.document.querySelector("#goBottom");
+    goBottom.addEventListener("click", () => {
+      this.window.scrollTo({
+        top: this.document.documentElement.scrollHeight,
+        behavior: "smooth",
+      });
+    });
   // detail 더보기
   const moreBtn = this.document.querySelector(".moreBtn");
   const detail = this.document.querySelector(".detail-wrap");
-  const moreTxtStrong = this.document.querySelector(".moreBtn strong");
-  const moreTxtP = this.document.querySelector(".moreBtn p");
+  const closeBtn = this.document.querySelector(".closeBtn");
   moreBtn.addEventListener("click", () => {
-    if(detail.classList.toggle("open")){
-      moreTxtStrong.textContent = "⌃"
-      moreTxtP.textContent = ""
-    }else{
-      moreTxtStrong.textContent = "⌵"
-      moreTxtP.textContent = "READ MORE"
+    detail.classList.add("open");
+    if (detail.classList.contains("open")) {
+      closeBtn.style.display = "flex";
+      moreBtn.style.display = "none";
     }
+    closeBtn.addEventListener("click", () => {
+      this.window.scrollTo({
+        top: detail.offsetTop,
+        behavior: "smooth",
+      });
+      detail.classList.remove("open");
+      closeBtn.style.display = "none";
+      moreBtn.style.display = "flex";
+    });
   });
 });
