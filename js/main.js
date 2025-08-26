@@ -115,15 +115,17 @@ window.addEventListener("load", function () {
       { once: true }
     );
   }
-  this.setInterval(()=>{
-    bounceEffect(moreBtn)
-    bounceEffectUp(closeBtn)
-  },1700)
+  this.setInterval(() => {
+    bounceEffect(moreBtn);
+    bounceEffectUp(closeBtn);
+  }, 1700);
   // modal
   const modalClose = this.document.querySelector("#modalClose");
   const modal = this.document.querySelector(".modalWrap");
+  this.document.documentElement.style.overflow = "hidden";
   modalClose.addEventListener("click", () => {
     modal.classList.add("none");
+    this.document.documentElement.style.overflow = "";
   });
   //
   // help
