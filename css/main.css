@@ -30,6 +30,9 @@ img {
 body {
   background-color: #f6f5f1;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* modal */
 /* modal */
 .modalWrap {
