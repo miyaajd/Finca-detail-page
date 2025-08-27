@@ -155,7 +155,7 @@ window.addEventListener("load", function () {
         helpMenu[0].classList.add("active");
         helpMenu[1].classList.add("active");
       }
-    }
+    }  
     helpMenuBtn.forEach((button) => {
       button.addEventListener("click", () => {
         helpMenu.forEach((menu) => {
